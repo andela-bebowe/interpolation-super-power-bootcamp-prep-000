@@ -2,6 +2,6 @@
 def display_rainbow(colors)
   str = ""
   for i in colors
-    str += "i"
+    str += "#{i.chr.upcase}: #{i} "
   end
 end
