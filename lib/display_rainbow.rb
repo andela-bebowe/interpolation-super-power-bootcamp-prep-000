@@ -2,7 +2,7 @@
 def display_rainbow(colors)
   str = ""
   colors.each_with_index do |val, ind|
-    if (i == (6))
+    if (ind === (colors.length - 1))
       str += "#{i.chr.upcase}: #{i}"
     else
       str += "#{i.chr.upcase}: #{i}, "
