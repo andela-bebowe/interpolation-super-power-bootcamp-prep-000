@@ -1,11 +1,11 @@
 # Write your #display_rainbow method here
 def display_rainbow(colors)
   str = ""
-  colors.each_with_index do |val, ind|
+  colors.each_index do |ind|
     if (ind === (colors.length - 1))
-      str += "#{val.chr.upcase}: #{val}"
+      str += "#{colors[ind].chr.upcase}: #{colors[ind]}"
     else
-      str += "#{val.chr.upcase}: #{val}, "
+      str += "#{colors[ind].chr.upcase}: #{colors[ind]}, "
     end
   end
   puts str
