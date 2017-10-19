@@ -4,6 +4,7 @@ def display_rainbow(colors)
   for i in colors
     if (i === colors.length - 1)
       return str += "#{i.chr.upcase}: #{i}"
+    end
     str += "#{i.chr.upcase}: #{i}, "
   end
 end
